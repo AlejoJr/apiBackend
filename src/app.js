@@ -16,11 +16,6 @@ app.use(express.json())
 app.use(cors()) // para permitir a cualquier origen que consulte la api
 
 // EndPoints - Bank
-app.use(`${baseApi}/`, (req, res) => {
-  res.status(200).json({
-    message: 'Bienvenido a la API'
-  })
-})
 app.use(`${baseApi}/bank`, routerBank)
 
 app.use((req, res) => {

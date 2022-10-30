@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "babel-node": "babel-node --presets=@babel/preset-env",
-    "dev": "nodemon --exec npm run babel-node src/index.js",
+    "start": "nodemon --exec npm run babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,11 +20,11 @@
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.6",
     "@babel/node": "^7.20.0",
-    "@babel/preset-env": "^7.19.4"
+    "@babel/preset-env": "^7.19.4",
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.20",
     "standard": "^17.0.0"
   },
   "eslintConfig": {
